@@ -1,0 +1,58 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  overflow-x: hidden;
+}
+
+.jumbotron {
+  max-height: 70vh;
+}
+.card-img-top {
+  max-height: 15rem;
+}
+
+#contactButton {
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  #contactButton {
+    width: auto;
+  }
+}
+
+.icon {
+  width: 25px;height: 25px;
+}
+
+.bg-verde {
+  background-color: #2DB67C;
+}
+.bg-viola {
+  background-color: #6200EE;
+}
+
+.color-viola {
+  color: #3700B3;
+}
+
+.bg-water {
+ background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #76b852, #8dc26f); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #76b852, #8dc26f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
