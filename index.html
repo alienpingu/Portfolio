@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+	<title>Resume of BrtSml</title>
+	<link rel="icon" href="./img/ninja.svg">
+	<meta name="description" content="Jr. Full Stack Web Developer">
+	<meta name="keywords" content="HTML, CSS, JavaScript, Figma, Jquery, ReactJS, Python, NodeJS, Php, Postgres, Sass, Web developer">
+	<meta name="author" content="Samuele Bertocco">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body class="bg-water">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-verde fixed-top">
-	  <a class="navbar-brand" href="#home">Navbar</a>
+<body class="bg-water" data-spy="scroll" data-target="#navbar" data-offset="400">
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-verde fixed-top shadow-sm">
+	  <a class="navbar-brand" href="#home">BrtSml</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
 	    <ul class="navbar-nav">
-	      <li class="nav-item active">
+	      <li class="nav-item">
 	        <a class="nav-link" href="#portfolio">Portfolio</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#cv">Background</a>
+	        <a class="nav-link" href="#skills">Skills</a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="#contact">Contacts</a>
@@ -28,10 +32,10 @@
 	    </ul>
 	  </div>
 	</nav>
-	<div id="home" class="jumbotron mt-5">
+	<div id="home" class="jumbotron mt-5 shadow-lg">
 		 <div class="row">
 		 	<div class="col col-12 col-md-6">
-			  <h1 class="display-4">Hello, i'm <font class="color-viola">brtsml!</font></h1>
+			  <h1 class="display-4 tracking-in-contract-bck">Hello, i'm <font class="color-viola">Samuele!</font></h1>
 			  <p class="lead">This is my personal resume website, here you can find information about my working experience in this crazy world.</p>
 			  <hr class="my-4">
 			  <p>I'm a <font class="color-viola">Jr Full Stack Developer</font>, i'm working hard to became a Senior developer!</p>
@@ -44,52 +48,56 @@
 	</div>
 	<section id="portfolio">
 			<div class="container py-3 py-md-5">
-				<h1 class="text-light">Portfolio</h1>
+				<h2 class="text-light">Portfolio</h2>
 				<hr>
 				<div class="card-deck">
-				  	<div class="card">
-					    <img src="https://picsum.photos/100" class="card-img-top" alt="...">
+				  	<div class="card shadow">
+					    <img src="./img/pic/certificami.jpg" class="card-img-top p-4" alt="...">
 					    <div class="card-body">
-					      	<h5 class="card-title">Card title</h5>
-					      	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					      	<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					      	<h5 class="card-title">Autocertificami.online</h5>
+					      	<p class="card-text">Made in 24 hours for the hack@home themed hackathon covid19</p>
+					      	<p class="card-text"><small class="text-muted">XD, HTML5, Sass, JS, Jquery, Spring, RestAPI, Java and postgres</small></p>
+					      	<a href="http://certificami.online/" class="btn btn-primary btn-fix-width m-1">Website</a>
+					      	<a href="https://youtu.be/r4du9P5wd74?t=25601" class="btn btn-outline-success btn-fix-width m-1">Presentation</a>
+
 					    </div>
 				  	</div>
-				  	<div class="card">
-					    <img src="https://picsum.photos/100" class="card-img-top" alt="...">
+				  	<div class="card shadow">
+					    <img src="./img/pic/spreadsheet.gif" class="card-img-top" alt="...">
 					    <div class="card-body">
-					      <h5 class="card-title">Card title</h5>
-					      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-					      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					      <h5 class="card-title">G-Spreadsheet converter</h5>
+					      <p class="card-text">A revolutionary technology has been developed that can create any type of graphic content from an excel sheet</p>
+					      <p class="card-text"><small class="text-muted">ReactJS, Babel, RestFullAPI and Google SpreadSheet</small></p>
 					    </div>
 				  	</div>
-				  	<div class="card">
-					    <img src="https://picsum.photos/100" class="card-img-top" alt="...">
+				  	<div class="card shadow">
+					    <img src="./img/pic/carousel.gif" class="card-img-top" alt="...">
 					    <div class="card-body">
-					      <h5 class="card-title">Card title</h5>
-					      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-					      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					      <h5 class="card-title">Json2Carousel</h5>
+					      <p class="card-text">A progressive and modular carousel that can be generated by a json object</p>
+					      <p class="card-text"><small class="text-muted">HTML5, CSS3 and JavaScript</small></p>
 					    </div>
 				  	</div>
 				</div>
 			</div>
 	</section>
-	<section id="cv" class="bg-light py-2 curved">
+	<section id="skills" class="bg-light py-2 shadow-lg">
 		<div class="container my-3 my-md-5">
-			<h1>Skills</h1>
+			<h2>Skills</h2>
 			<hr>
 		  <div class="row skills">
 		  	<div class="col col-12 col-md-4">
 		  		<img class="w-100 d-none d-md-block" src="./img/draw/skill.svg">
 		  	</div>
 		    <div class="col col-12 col-md-4">
-		      	<ul class="list-group list-group-flush">
+		      	<ul class="list-group list-group-flush fix-last-item">
 				  <li class="list-group-item bg-light"><img class="icon mr-3" src="./img/icon/skills/figma.svg">Figma</li>
 				  <li class="list-group-item bg-light"><img class="icon mr-3" src="./img/icon/skills/html-5.svg">HTML5</li>
 				  <li class="list-group-item bg-light"><img class="icon mr-3" src="./img/icon/skills/css.svg">CSS3</li>
 				  <li class="list-group-item bg-light"><img class="icon mr-3" src="./img/icon/skills/sass.svg">Sass</li>
 				  <li class="list-group-item bg-light"><img class="icon mr-3" src="./img/icon/skills/javascript.svg">JavaScript</li>
 				</ul>
+		    	
 		    </div>
 		    <div class="col col-12 col-md-4">
   		      	<ul class="list-group list-group-flush">
@@ -106,21 +114,22 @@
 		<div class="container my-3 my-md-5">
 			<div class="row">
 				<div class="col col-12 col-md-6 text-center">
-					<img class="rounded-circle" src="https://picsum.photos/150" alt="profile">
+					<img id="profile" class="rounded-circle shadow-sm" src="./img/pic/me.jpg" alt="profile">
 					<h3 class="mt-2">Samuele Bertocco</h3>
 					<ul class="list-inline">
-					  <a href="google.com" class="list-inline-item"><img class="icon text-center" src="./img/icon/social/github.svg"></a>
-					  <a href="google.com" class="list-inline-item"><img class="icon text-center" src="./img/icon/social/linkedin.svg"></a>
-					  <a href="google.com" class="list-inline-item"><img class="icon text-center" src="./img/icon/social/telegram.svg"></a>
+					  <a href="https://github.com/alienpingu" class="list-inline-item"><img class="icon text-center" src="./img/icon/social/github.svg"></a>
+					  <a href="https://www.linkedin.com/in/samuele-bertocco-217476149" class="list-inline-item"><img class="icon text-center" src="./img/icon/social/linkedin.svg"></a>
+					  <a href="https://t.me/brtsml" class="list-inline-item"><img class="icon text-center" src="./img/icon/social/telegram.svg"></a>
 					</ul>
 				</div>
 				<div class="col col-12 col-md-6">
 					<h2>About</h2>
-					<p>È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”)
+					<p>Before embarking on my career as a programmer I tried to work in various companies in the technical office and as a designer, as at school I was not stimulated enough.
+					Since I was a child I have been enthusiastic about tech innovation and I decided to do what I love most, train myself and become a Sr. Full Stack Developer. It was a crazy decision but the best one I've ever made in my life!
 					</p>
 				</div>
 				<div class="col col-12 text-center">
-					<button id="contactButton" class="btn btn-primary btn-lg">Contact me!</button>
+					<a href="mailto:samuele.bertocco@gmail.com?subject=[From WebSite]" id="contactButton" class="btn btn-primary btn-fix-width btn-lg">Contact me!</a>
 				</div>
 			</div>
 		</div>

@@ -19,6 +19,10 @@ body {
   overflow-x: hidden;
 }
 
+#navbar {
+  transition: 0.25s;
+}
+
 .jumbotron {
   max-height: 70vh;
 }
@@ -26,19 +30,54 @@ body {
   max-height: 15rem;
 }
 
-#contactButton {
+
+.btn-fix-width {
   width: 100%;
 }
 @media screen and (min-width: 600px) {
-  #contactButton {
+  .btn-fix-width {
     width: auto;
   }
+
+
 }
 
 .icon {
   width: 25px;height: 25px;
 }
 
+#profile {
+  max-height: 14rem;
+}
+@media screen and (max-width: 600px) {
+    /*Fix list in mobile*/
+  .fix-last-item:last-child {
+    border-bottom:  1px solid rgba(0,0,0,.125);
+  }
+}
+
+
+/*Button primary*/
+.btn-primary {
+  background-color: #2DB67C;
+  border: 1px solid #0BAB66;
+}
+.btn-primary:hover, .btn-primary:active {
+  background-color: #0BAB66;
+  border: 1px solid #02844C;
+}
+
+.btn-outline-success {
+  border: 1px solid #2DB67C;
+  color: #2DB67C;
+}
+.btn-outline-success:hover, .btn-outline-success:active {
+  background-color: #2DB67C;
+  color: #F1FAF6;
+}
+
+
+/*Preset BG*/
 .bg-verde {
   background-color: #2DB67C;
 }
@@ -47,7 +86,7 @@ body {
 }
 
 .color-viola {
-  color: #3700B3;
+  color: #8dc26f;
 }
 
 .bg-water {
@@ -56,3 +95,5 @@ body {
   background: linear-gradient(to right, #76b852, #8dc26f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
+
